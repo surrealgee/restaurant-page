@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&family=Montserrat:wght@300;400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: grey;
+  background-image: url(imgs/pexels-pixabay-372851.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  backdrop-filter: blur(2px);
+  color: #fff;
+  font-family: "Monserrat", sans-serif;
+  margin: 0;
+}
+
+/* Typography */
+
+.title {
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.home-text {
+  font-size: 3rem;
+  text-align: center;
+  max-width: 70%;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 2px rgb(0, 0, 0, 0.3);
+  font-weight: 700;
+}
+
+.home-text span {
+  color: #c59d5f;
+  text-shadow: 1px 1px 2px rgb(0, 0, 0, 0.3);
+}
+
+/* Buttons */
+
+.btn {
+  padding: 1em 3em;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  font-weight: 700;
+  margin-top: 3rem;
+}
+
+.primary-btn {
+  background-color: #c59d5f;
+  color: #fff;
+}
+
+/* Layout */
+
+.content {
+  display: grid;
+  grid-template-rows: 100px minmax(750px, 1fr) 100px;
+}
+
+.header {
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #c59d5f;
+  background-color: rgba(22, 27, 46, 0.5);
+}
+
+nav {
+  width: 50%;
+  text-transform: uppercase;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.list-item {
+  cursor: pointer;
+}
+
+main,
+.main-content {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+}
+
+main {
+  background-color: rgba(22, 27, 46, 0.2);
+}
+
+.main-content {
+  height: 600px;
+  border-radius: 10px;
+  padding: 3em;
+}
+
+footer {
+  border-top: 1px solid #c59d5f;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  background-color: rgba(22, 27, 46, 0.5);
+}
+
+footer p {
+  margin: 0;
+  opacity: 0.8;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* Medie Queries */
+
+@media (max-width: 1910px) {
+  .content {
+    grid-template-rows: 100px minmax(733px, 1fr) 100px;
+  }
+}
