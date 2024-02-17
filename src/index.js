@@ -1,6 +1,7 @@
 import { renderHomePage } from "./home_page";
 import { renderMenuPage } from './menu_page';
 import { renderAboutPage } from "./about_page";
+import './style.css';
 
 window.onload = () => {
     renderHomePage();
