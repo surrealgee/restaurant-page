@@ -10,6 +10,7 @@ body {
     text-align: center;
     line-height: 1.5;
     background-color: lightcyan;
+    font-family: "Roboto Slab", serif;
 }
 
 img {
@@ -62,4 +63,10 @@ button {
     cursor: pointer;
     flex: 1;
     max-width: 100px;
+    border: none;
+    background-color: lightcyan;
+}
+
+button:hover {
+    color: goldenrod;
 }
