@@ -1,1 +1,3 @@
-console.log('configured');
+import { renderHomePage } from "./home-page";
+
+renderHomePage();
